@@ -12,7 +12,7 @@ document.getElementById("planButton").addEventListener("click", async () => {
     const response = await fetch('https://api.openai.com/v1/completions', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer YOUR_OPENAI_API_KEY`,
+        'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
